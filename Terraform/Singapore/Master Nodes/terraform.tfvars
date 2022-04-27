@@ -1,0 +1,17 @@
+master_vm_names   = ["master-node-sg-a", "master-node-sg-b", "master-node-sg-c"]
+zones             = ["asia-southeast1-a", "asia-southeast1-b", "asia-southeast1-c"]
+subnetwork        = "singapore-subnet"
+network_name      = "wso2-project-network"
+app_name          = "wso2-project"
+k8-ip-master      = ["10.2.0.2", "10.2.0.3", "10.2.0.4"]
+resource_group    = ["master-group-sg-a", "master-group-sg-b", "master-group-sg-c"]
+machine_type      = "e2-medium"
+region            = "asia-southeast1"
+lb_subnet_cidr    = "10.6.0.0/16"
+lb_subnet_name    = "sg-lb-subnet"
+lb_ip_name        = "sg-lb-ip"
+lb_ip             = "10.6.0.2"
+lb_name           = "sg-master-int-lb"
+lb_service_label  = "sg-lb-masters"
+backend_name      = "sg-master-int-lb"
+health_check_name = "sg-master-hc"

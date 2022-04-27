@@ -1,0 +1,6 @@
+network_name = "wso2-project-network"
+subnetwork   = "singapore-subnet"
+zone         = "asia-southeast1-b"
+machine_type = "f1-micro"
+name         = "bastion-vm-sg"
+IP           = "10.2.0.10"

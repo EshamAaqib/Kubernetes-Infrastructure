@@ -1,0 +1,6 @@
+---
+- hosts: masterusa[0]
+  become: yes
+  tasks:
+    - name: Delete Application in Kubernetes 
+      command: kubectl delete -f /root/hello-k8.yaml

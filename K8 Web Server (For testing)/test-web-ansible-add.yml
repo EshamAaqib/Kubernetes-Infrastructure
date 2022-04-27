@@ -1,0 +1,18 @@
+---
+- hosts: masterusa[0]
+  become: yes
+  tasks:
+    - name: Copy Deployment file to Master Node
+      copy: src=hello-k8.yaml dest=/root/
+
+    - name: Deploy Application in Kubernetes 
+      command: kubectl apply -f /root/hello-k8.yaml
+    - pause:
+        seconds: 10 
+
+    - name: Check whether the deployment is successfull
+      shell: curl -XGET 'http://10.1.0.4:30080'
+      register: health
+      
+    - name: Deployment Status
+      debug: var=health.stdout_lines

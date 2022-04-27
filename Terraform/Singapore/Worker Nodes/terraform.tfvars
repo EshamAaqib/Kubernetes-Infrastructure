@@ -1,0 +1,12 @@
+worker_vm_names        = ["worker-node-sg-a", "worker-node-sg-b", "worker-node-sg-c"]
+subnetwork             = "singapore-subnet"
+zones_usa              = ["asia-southeast1-a", "asia-southeast1-b", "asia-southeast1-c"]
+resource_group         = ["worker-group-sg-a", "worker-group-sg-b", "worker-group-sg-c"]
+network_name           = "wso2-project-network"
+k8-ip-worker-usa       = ["10.2.0.5", "10.2.0.6", "10.2.0.7"]
+machine_type           = "e2-small"
+backend_name           = "sg-worker-backend"
+health_check_name      = "sg-worker-hc"
+url_map_name           = "sg-worker-ext-lb"
+target_http_proxy_name = "sg-worker-http-proxy"
+external_lb_name       = "sg-worker-ext-lb"

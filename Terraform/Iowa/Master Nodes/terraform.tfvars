@@ -1,0 +1,17 @@
+master_vm_names   = ["master-node-us-a", "master-node-us-b", "master-node-us-c"]
+subnetwork        = "us-subnet"
+zones             = ["us-central1-a", "us-central1-b", "us-central1-c"]
+network_name      = "wso2-project-network"
+app_name          = "wso2-project"
+k8-ip-master      = ["10.1.0.2", "10.1.0.3", "10.1.0.4"]
+resource_group    = ["master-group-us-a", "master-group-us-b", "master-group-us-c"]
+machine_type      = "e2-medium"
+region            = "us-central1"
+lb_subnet_cidr    = "10.5.0.0/16"
+lb_subnet_name    = "us-master-lb-subnet"
+lb_ip_name        = "usa-master-lb-ip"
+lb_ip             = "10.5.0.2"
+lb_name           = "usa-master-int-lb"
+lb_service_label  = "us-lb-masters"
+backend_name      = "usa-master-int-lb"
+health_check_name = "us-master-hc"
